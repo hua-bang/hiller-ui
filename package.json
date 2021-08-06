@@ -1,0 +1,46 @@
+{
+  "name": "hiller-ui",
+  "version": "1.0.0",
+  "description": "A personal Vue.js 3.0 UI Toolkit.",
+  "main": "lib/index.js",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config build/webpack.prod.js",
+    "dev": "webpack serve --config build/webpack.dev.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hua-bang/hiller-ui.git"
+  },
+  "keywords": [
+    "Vue3.0",
+    "UI"
+  ],
+  "author": "hua-bang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hua-bang/hiller-ui/issues"
+  },
+  "homepage": "https://github.com/hua-bang/hiller-ui#readme",
+  "dependencies": {
+    "css-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.2",
+    "postcss-loader": "^6.1.1",
+    "style-loader": "^3.2.1",
+    "vue": "^3.1.5",
+    "webpack": "^5.49.0",
+    "webpack-cli": "^4.7.2"
+  },
+  "devDependencies": {
+    "path-browserify": "^1.0.1",
+    "vue-loader": "^16.4.1",
+    "vue-template-compiler": "^2.6.14",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.8.0"
+  }
+}
