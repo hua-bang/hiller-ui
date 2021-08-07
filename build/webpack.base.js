@@ -9,52 +9,30 @@ module.exports = {
     path: path.resolve(__dirname, "../dist/"),
     filename: "build.js"
   },
+  devtool: 'source-map',
   module: {
     rules: [
       {
         test: /\.vue$/,
-        loader: "vue-loader",
+        loader: "vue-loader"
+      },
+      {
+        test: /\.js$/,
+        loader: "babel-loader",
         options: {
-          loaders: {
-            css: [
-              'vue-style-loader',
-              {
-                loader: 'css-loader',
-                options: {
-                  sourceMap: true,
-                },
-              },
-            ]
-          }
-        }
-      },
-      {
-        test: /\.css$/,
-        loaders: [
-          {
-            loader: 'style-loader',
-            options: {
-              sourceMap: true,
-            },
-          },
-          {
-            loader: 'css-loader',
-            options: {
-              sourceMap: true,
-            },
-          }
-        ]
-      },
-      {
-        test: /\.(gif|jpg|png|woff|svg|eot|ttf)\??.*$/,
-        loader: 'url-loader?limit=8192'
+          sourceMap: true
+        },
+        exclude: /node_modules/
       }
     ]
   },
   resolve: {
     extensions: ['.js', '.vue'],
     alias: {
-      '@': resolve(dirname, '../packages')
+      '@': path.resolve(__dirname, '../packages'),
+      '@src': path.resolve(__dirname, "../examples"),
+      '@component': path.resolve(__dirname, "../packages/components"),
+      '@styles': path.resolve(__dirname, "../packages/styles"),
     }
   },
   plugins: [
@@ -62,5 +40,5 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "../public/index.html")
     })
-  ],
+  ]
 }
