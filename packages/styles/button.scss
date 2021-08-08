@@ -1,0 +1,92 @@
+@import "@styles/common/var/color.scss";
+
+.hl-button {
+  color: #000;
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+  background: #fff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  text-align: center;
+  box-sizing: border-box;
+  color: #606266;
+  outline: none;
+  margin: 0;
+  transition: 0.5s;
+  padding: 12px 20px;
+  border: 1px solid #dcdfe6;
+  border-radius: 4px;
+  &:focus, &:hover {
+    color: #409eff;
+    border-color: #c6e2ff;
+    background-color: #ecf5ff;
+  }
+  &.is-round {
+    border-radius: 18px;
+    padding: 12px 23px;
+  }
+  &.is-disable, &.is-disable:hover {
+    filter: brightness(91%);
+    cursor: not-allowed;
+  }
+}
+
+.hl-button--primary {
+  background: $--color-primary;
+  color: white;
+  &:focus, &:hover {
+    color: white;
+    background: lighten($--color-primary, 8%);
+  }
+}
+.hl-button--default {
+  background: $--color-default;
+}
+.hl-button--info {
+  background: $--color-info;
+  color: white;
+  &:focus, &:hover {
+    color: white;
+    background: lighten($--color-info, 8%);
+  }
+}
+.hl-button--success {
+  background: $--color-success;
+  color: white;
+  &:focus, &:hover {
+    color: white;
+    background: lighten($--color-success, 8%);
+  }
+}
+.hl-button--warning {
+  background: $--color-warning;
+  color: white;
+  &:focus, &:hover {
+    color: white;
+    background: lighten($--color-warning, 8%);
+  }
+}
+.hl-button--danger {
+  background: $--color-danger;
+  color: white;
+  &:focus, &:hover {
+    color: white;
+    background: lighten($--color-danger, 8%);
+  }
+}
+.hl-button--medium {
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+.hl-button--small {
+  padding: 9px 15px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+.hl-button--mini {
+  padding: 7px 15px;
+  font-size: 12px;
+  border-radius: 3px;
+}
