@@ -1,8 +1,12 @@
 <template>
   <div>
-    <div>i'm count!!</div>
+    <div class="hello">
+      i'm count!!
+    </div>
     <div>{{ count }}</div>
-    <button @click="count++">plus</button>
+    <button @click="count++">
+      plus
+    </button>
   </div>
   <div>hello!</div>
 </template>

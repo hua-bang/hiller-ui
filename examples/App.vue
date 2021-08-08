@@ -1,18 +1,9 @@
 <template>
-  <div>hello vue3</div>
-  <Count></Count>
-  <Hello />
+  <router-view />
 </template>
 
 <script>
-import Count from "./components/Count.vue";
-import Hello from "./components/Hello.vue";
-
 export default {
-  components: {
-    Count,
-    Hello,
-  },
   setup() {
     console.log("hello, world");
   },
@@ -20,4 +11,7 @@ export default {
 </script>
 
 <style>
+#demo {
+  color: red;
+}
 </style>
