@@ -1,7 +1,6 @@
 const path = require("path");
-const webpack = require('webpack');
-const { merge } = require('webpack-merge');
-const webpackBaseConfig = require('./webpack.base.js');
+const { merge } = require("webpack-merge");
+const webpackBaseConfig = require("./webpack.base.js");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = merge(webpackBaseConfig, {
@@ -41,7 +40,7 @@ module.exports = merge(webpackBaseConfig, {
             loader: "postcss-loader"
           },
           {
-            loader: 'sass-loader',
+            loader: "sass-loader",
             options: {
               sourceMap: true
             }
@@ -53,4 +52,4 @@ module.exports = merge(webpackBaseConfig, {
   plugins: [
     new CleanWebpackPlugin()
   ]
-})
+});

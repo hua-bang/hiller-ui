@@ -1,7 +1,5 @@
 const path = require("path");
 
-const webpack = require('webpack');
-
 const webpackBaseConfig = require("./webpack.base.js");
 
 const { merge } = require("webpack-merge");
@@ -9,7 +7,7 @@ const { merge } = require("webpack-merge");
 module.exports = merge(webpackBaseConfig, {
   mode: "development",
   entry: path.resolve(__dirname, "../examples/main.js"),
-  devtool: 'inline-source-map',
+  devtool: "inline-source-map",
   devServer: {
     port: 8090,
     hot: true
@@ -20,10 +18,10 @@ module.exports = merge(webpackBaseConfig, {
         test: /\.css$/,
         use: [
           {
-            loader: 'style-loader'
+            loader: "style-loader"
           },
           {
-            loader: 'css-loader',
+            loader: "css-loader",
             options: {
               sourceMap: true
             }
@@ -35,13 +33,13 @@ module.exports = merge(webpackBaseConfig, {
         use: [
           "style-loader",
           {
-            loader: 'css-loader',
+            loader: "css-loader",
             options: {
               sourceMap: true
             }
           },
           {
-            loader: 'sass-loader',
+            loader: "sass-loader",
             options: {
               sourceMap: true
             }
@@ -50,4 +48,4 @@ module.exports = merge(webpackBaseConfig, {
       }
     ]
   }
-})
+});
