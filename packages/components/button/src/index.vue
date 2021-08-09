@@ -3,8 +3,9 @@
     class="hl-button"
     @click="handleClick"
     :class="classes"
-    :disabled="disabled"
+    :disabled="disabled || loading"
   >
+    <i class="el-icon-loading" v-if="loading"></i>
     <slot>Button</slot>
   </button>
 </template>
@@ -44,12 +45,13 @@ export default {
 
 function useClasses(props) {
   return computed(() => {
-    const { type, size, disabled, round } = props;
+    const { type, size, disabled, round, loading } = props;
     return [
       type ? `hl-button--${type}` : "",
       size ? `hl-button--${size}` : "",
       disabled ? "is-disable": "",
-      round ? "is-round" : ""
+      round ? "is-round" : "",
+      loading? "is-loading": ""
     ];
   });
 }
