@@ -39,6 +39,15 @@
     <hl-button size="mini">超小按钮</hl-button>
   </div>
   <div class="button-area">
+    <h3 style="margin-left: 15px">加载按钮</h3>
+    <hl-button loading>加载中</hl-button>
+    <hl-button loading type="primary">加载中</hl-button>
+    <hl-button loading type="success">加载中</hl-button>
+    <hl-button loading type="info">加载中</hl-button>
+    <hl-button loading type="warning">加载中</hl-button>
+    <hl-button loading type="danger">加载中</hl-button>
+  </div>
+  <div class="button-area">
     <h3 style="margin-left: 15px">按钮事件</h3>
     <hl-button @click="test">打开弹窗</hl-button>
   </div>

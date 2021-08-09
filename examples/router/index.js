@@ -15,6 +15,11 @@ const routes = [
     path: "/input",
     name: "InputView",
     component: () => import("@src/view/InputView.vue")
+  },
+  {
+    path: "/message",
+    name: "MessageView",
+    component: () => import("@src/view/MessageView.vue")
   }
 ];
 
