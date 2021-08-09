@@ -1,0 +1,60 @@
+@import "../common/var/color.scss";
+
+.hl-message {
+  min-width: 380px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ebeef5;
+  position: fixed;
+  left: 50%;
+  top: 20px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #edf2fc;
+  -webkit-transition: opacity 0.3s, top 0.4s, -webkit-transform 0.4s;
+  transition: opacity 0.3s, top 0.4s, -webkit-transform 0.4s;
+  transition: opacity 0.3s, transform 0.4s, top 0.4s;
+  transition: opacity 0.3s, transform 0.4s, top 0.4s, -webkit-transform 0.4s;
+  padding: 15px 15px 15px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.hl-message p {
+  margin: 0;
+}
+.hl-message--success {
+  background-color: #f0f9eb;
+  border-color: #e1f3d8;
+  .hl-message--content {
+    color: #67c23a;
+  }
+}
+.hl-message--warning {
+  background-color: #fdf6ec;
+  border-color: #faecd8;
+  .hl-message--content {
+    color: #E6A23C;
+  }
+}
+.hl-message--error {
+  background-color: #fef0f0;
+  border-color: #fde2e2;
+  .hl-message--content {
+    color: #F56C6C;
+  }
+}
+.is-center {
+  justify-content: center;
+}
+
+.hl-message-fade-enter, .hl-message-fade-leave-active {
+  color: red !important;
+  opacity:0;
+  transform:translate(-50%,-100%)
+}
