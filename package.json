@@ -10,7 +10,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config build/webpack.prod.js",
+    "build:prod": "webpack --config build/webpack.prod.js",
+    "build:style": "gulp --gulpfile build/gen-style.js",
     "dev": "webpack serve --config build/webpack.dev.js"
   },
   "repository": {
@@ -29,6 +30,11 @@
   "homepage": "https://github.com/hua-bang/hiller-ui#readme",
   "dependencies": {
     "css-loader": "^6.2.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.0.0",
     "html-webpack-plugin": "^5.3.2",
     "style-loader": "^3.2.1",
     "vue-router": "^4.0.10",
@@ -55,6 +61,7 @@
     "postcss-loader": "^6.1.1",
     "postcss-preset-env": "^6.7.0",
     "prettier": "^2.3.2",
+    "sass": "^1.37.5",
     "sass-loader": "^12.1.0",
     "vue": "^3.1.5",
     "vue-eslint-parser": "^7.10.0",
