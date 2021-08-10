@@ -40,7 +40,7 @@ export default {
       type: String,
       default: "info",
       validator(val) {
-        return ["success", "warning", "info", "error"].includes(val);
+        return ["","success", "warning", "info", "error"].includes(val);
       },
     },
     duration: {
@@ -60,6 +60,7 @@ export default {
     const instance = getCurrentInstance();
     const visible = ref(true);
     const closed = ref(false);
+    const verticalOffset = ref(props.offset);
 
     const classes = useClass(props);
 
@@ -67,6 +68,12 @@ export default {
       return props.type && !props.iconClass
         ? `hl-message__inco el-icon-${typeMap[props.type]}`
         : "";
+    });
+
+    const positionStyle = computed(() => {
+      return {
+        "top" : `${verticalOffset.value}px`
+      };
     });
 
     const { startTimer, clearTimer } = useTimer(() => {
@@ -118,6 +125,7 @@ export default {
       typeClass,
       startTimer,
       clearTimer,
+      positionStyle,
       handleAfterLeave
     };
   }
