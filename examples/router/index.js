@@ -20,6 +20,11 @@ const routes = [
     path: "/message",
     name: "MessageView",
     component: () => import("@src/view/MessageView.vue")
+  },
+  {
+    path: "/card",
+    name: "CardView",
+    component: () => import("@src/view/CardView.vue")
   }
 ];
 
