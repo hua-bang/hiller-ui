@@ -35,6 +35,7 @@ module.exports = {
       "@": path.resolve(__dirname, "../packages"),
       "@src": path.resolve(__dirname, "../examples"),
       "@components": path.resolve(__dirname, "../packages/components"),
+      "@hooks": path.resolve(__dirname, "../packages/hooks"),
       "@styles": path.resolve(__dirname, "../packages/styles"),
     },
     symlinks: true
