@@ -5,7 +5,7 @@
     :class="classes"
     :disabled="disabled || loading"
   >
-    <i class="el-icon-loading" v-if="loading"></i>
+    <i class="hl-button__loading iconfont icon-loading" v-if="loading"></i>
     <slot>Button</slot>
   </button>
 </template>

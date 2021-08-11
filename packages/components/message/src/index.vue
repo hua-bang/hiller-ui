@@ -12,9 +12,7 @@
     <slot>
       <p class="hl-message--content">{{ message }}</p>
     </slot>
-    <div v-if="showClose" class="el-message__closeBtn el-icon-close" @click="close">
-      x
-    </div>
+    <i v-if="showClose" class="hl-message__closeBtn iconfont icon-Close" @click="close"></i>
     </div>
   </transition>
 </template>
@@ -78,7 +76,7 @@ export default {
 
     const { startTimer, clearTimer } = useTimer(() => {
       if(!closed.value && props.duration) {
-        close();
+        // close();
       }
     }, props.duration);
 
