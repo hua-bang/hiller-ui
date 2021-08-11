@@ -25,6 +25,11 @@ const routes = [
     path: "/card",
     name: "CardView",
     component: () => import("@src/view/CardView.vue")
+  },
+  {
+    path: "/icon",
+    name: "IconView",
+    component: () => import("@src/view/IconView.vue")
   }
 ];
 
