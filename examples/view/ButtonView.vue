@@ -1,8 +1,6 @@
 <template>
   <div>
-    <h2 style="margin-left: 15px">
-      Button 组件
-    </h2>
+    <h2 style="margin-left: 15px">Button 组件</h2>
   </div>
   <div class="button-area">
     <h3 style="margin-left: 15px">基础按钮</h3>
@@ -55,9 +53,11 @@
 
 <script>
 import HlButton from "@components/button/src/index";
+import HlCard from "@components/card/src/index";
 export default {
   components: {
-    "hl-button": HlButton
+    "hl-button": HlButton,
+    "hl-card": HlCard
   },
   setup() {
     let test = () => {
