@@ -5,7 +5,8 @@
     :class="classes"
     :disabled="disabled || loading"
   >
-    <i class="hl-button__loading iconfont icon-loading" v-if="loading"></i>
+    <i class="hl-button__loading iconfont icon-loading" v-if="loading && !icon"></i>
+    <i class="hl-button__icon iconfont" :class="`icon-${icon}`" v-if="icon"></i>
     <slot>Button</slot>
   </button>
 </template>
@@ -26,7 +27,8 @@ export default {
     },
     disabled: Boolean,
     loading: Boolean,
-    round: Boolean
+    round: Boolean,
+    icon: String
   },
   setup(props, context) {
     
