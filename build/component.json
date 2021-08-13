@@ -1,0 +1,6 @@
+{
+  "button": "button/index.js",
+  "card": "card/index.js",
+  "icon": "icon/index.js",
+  "message": "message/index.js"
+}

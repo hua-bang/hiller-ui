@@ -25,7 +25,7 @@ module.exports = {
         options: {
           sourceMap: true
         },
-        exclude: /node_modules/
+        exclude: /node_modules/,
       }
     ]
   },

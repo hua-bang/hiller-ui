@@ -2,7 +2,12 @@
   "name": "hiller-ui",
   "version": "1.0.0",
   "description": "A personal Vue.js 3.0 UI Toolkit.",
-  "main": "lib/index.js",
+  "main": "lib/hiller-ui.min.js",
+  "files": [
+    "lib",
+    "packages",
+    "README"
+  ],
   "directories": {
     "doc": "docs",
     "lib": "lib",
@@ -12,6 +17,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:prod": "webpack --config build/webpack.prod.js",
     "build:style": "gulp --gulpfile build/gen-style.js",
+    "build:components": "webpack --config build/webpack.lib.component.js",
+    "build:lib": "webpack --config build/webpack.lib.all.js",
     "dev": "webpack serve --config build/webpack.dev.js"
   },
   "repository": {
@@ -63,7 +70,7 @@
     "prettier": "^2.3.2",
     "sass": "^1.37.5",
     "sass-loader": "^12.1.0",
-    "vue": "^3.1.5",
+    "vue": "^3.2.2",
     "vue-eslint-parser": "^7.10.0",
     "vue-loader": "^16.4.1",
     "vue-template-compiler": "^2.6.14",
