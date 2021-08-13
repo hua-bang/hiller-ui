@@ -8,6 +8,7 @@
 <script>
 
 export default {
+  name: "hl-icon",
   props: {
     name: {
       type: String,

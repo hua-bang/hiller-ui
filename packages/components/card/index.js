@@ -1,7 +1,7 @@
-import Button from "./src/index.vue";
+import Card from "./src/index.vue";
 
-Button.install = function (app) {
-  app.component(Button.name, Button);
+Card.install = function (app) {
+  app.component(Card.name, Card);
 };
 
-export default Button;
+export default Card;

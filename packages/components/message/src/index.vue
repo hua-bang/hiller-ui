@@ -29,7 +29,7 @@ const typeMap = {
 };
 
 export default {
-  name: "HlMessage",
+  name: "hl-message",
   props: {
     message: {
       type: [String, Object]

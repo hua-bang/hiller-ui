@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  name: "HlCard",
+  name: "hl-card",
   props: {
     header: {},
     bodyStyle: {},

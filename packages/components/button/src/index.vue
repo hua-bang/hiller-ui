@@ -15,7 +15,7 @@
 import { computed } from "vue";
 
 export default {
-  name: "HlButton",
+  name: "hl-button",
   emits: ["click"],
   props: {
     type: {
