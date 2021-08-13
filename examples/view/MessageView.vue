@@ -11,19 +11,13 @@
     <hl-button @click="open">消息</hl-button>
     <hl-button @click="open('error')">错误</hl-button>
   </div>
-  <message message="test" showClose></message>
 </template>
 
 <script>
 
 import HlMessage from "@components/message/src/index.js";
-import HlButton from "@components/button/src/index.vue";
-import Message from "@components/message/src/index.vue";
+
 export default {
-  components: {
-    "hl-button": HlButton,
-    "message": Message
-  },
   setup() {
 
     const open = (type = "" ) => {

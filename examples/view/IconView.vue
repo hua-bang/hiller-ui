@@ -5,11 +5,7 @@
 </template>
 
 <script>
-import HlIcon from "@components/icon/src/index";
 export default {
-  components: {
-    "hl-icon": HlIcon
-  },
   setup() {
 
   }

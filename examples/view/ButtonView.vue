@@ -37,6 +37,14 @@
     <hl-button size="mini">超小按钮</hl-button>
   </div>
   <div class="button-area">
+    <h3 style="margin-left: 15px">图标按钮</h3>
+    <hl-button icon="wechat">微信按钮</hl-button>
+    <hl-button icon="fenlei" type="primary">分类按钮</hl-button>
+    <hl-button icon="yonghu" type="success">用户按钮</hl-button>
+    <hl-button icon="calendar" type="info">日历按钮</hl-button>
+    <hl-button icon="shouye" type="warning">首页按钮</hl-button>
+  </div>
+  <div class="button-area">
     <h3 style="margin-left: 15px">加载按钮</h3>
     <hl-button loading>加载中</hl-button>
     <hl-button loading type="primary">加载中</hl-button>
@@ -52,13 +60,7 @@
 </template>
 
 <script>
-import HlButton from "@components/button/src/index";
-import HlCard from "@components/card/src/index";
 export default {
-  components: {
-    "hl-button": HlButton,
-    "hl-card": HlCard
-  },
   setup() {
     let test = () => {
       alert("click the button");

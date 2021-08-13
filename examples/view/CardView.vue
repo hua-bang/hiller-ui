@@ -55,13 +55,7 @@
 </template>
 
 <script>
-import HlCard from "@components/card/src/index";
-import HlButton from "@components/button/src/index";
 export default {
-  components: {
-    "hl-card": HlCard,
-    "hl-button": HlButton
-  }
 };
 </script>
 
