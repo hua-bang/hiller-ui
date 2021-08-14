@@ -1,0 +1,48 @@
+.hl-switch{
+  position: relative;
+  display: inline-block;
+  --switch-width: 40;
+}
+.hl-switch--input{
+  position: absolute;
+  margin: 0;
+  height: 0;
+  top: 0;
+  opacity: 0;
+}
+.hl-switch--core{
+  margin: 0;
+  display: inline-block;
+  position: relative;
+  width: calc(var(--switch-width) * 1px);
+  height: 20px;
+  border: 1px solid #dcdfe6;
+  border-radius: 10px;
+  outline: none;
+  background: #dcdfe6;
+  &.is-disabled {
+    opacity: 0.6;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #fff;
+    transition: all 0.2s;
+  }
+  &.is-active {
+    background:#409eff;
+    border-color: #409eff;
+  }
+}
+
+.is-checked .hl-switch--core {
+  &::after {
+    position: absolute;
+    margin-left: 18px;
+  }
+}
