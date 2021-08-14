@@ -30,6 +30,11 @@ const routes = [
     path: "/icon",
     name: "IconView",
     component: () => import("@src/view/IconView.vue")
+  },
+  {
+    path: "/switch",
+    name: "SwitchView",
+    component: () => import("@src/view/SwitchView.vue")
   }
 ];
 
