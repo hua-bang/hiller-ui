@@ -24,13 +24,13 @@
     <div style="width: 480px; margin: 15px">
       <hl-card>
         <hl-switch
-      v-model="value2"
-      active-color="#13ce66"
-      inactive-color="#ff4949"
-      active-value="1"
-      inactive-value="2"
-    >
-    </hl-switch>
+          v-model="value2"
+          active-color="#13ce66"
+          inactive-color="#ff4949"
+          active-value="1"
+          inactive-value="2"
+        >
+        </hl-switch>
       </hl-card>
     </div>
   </div>

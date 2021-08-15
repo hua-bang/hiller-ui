@@ -35,6 +35,11 @@ const routes = [
     path: "/switch",
     name: "SwitchView",
     component: () => import("@src/view/SwitchView.vue")
+  },
+  {
+    path: "/notify",
+    name: "NotificationView",
+    component: () => import("@src/view/NotificationView.vue")
   }
 ];
 
