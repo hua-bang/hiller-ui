@@ -6,7 +6,7 @@ export function useTimer(fn, duration = 2000) {
     }
   }
   function clearTimer() {
-    clearTimer(timer);
+    clearTimeout(timer);
   }
   return {
     startTimer,

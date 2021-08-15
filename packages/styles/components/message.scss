@@ -14,10 +14,10 @@
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   background-color: #edf2fc;
-  -webkit-transition: opacity 0.3s, top 0.4s, -webkit-transform 0.4s;
-  transition: opacity 0.3s, top 0.4s, -webkit-transform 0.4s;
-  transition: opacity 0.3s, transform 0.4s, top 0.4s;
-  transition: opacity 0.3s, transform 0.4s, top 0.4s, -webkit-transform 0.4s;
+  -webkit-transition: opacity 0.3s, top 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, top 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s, top 0.3s;
+  transition: opacity 0.3s, transform 0.3s, top 0.3s, -webkit-transform 0.3s;
   padding: 15px 15px 15px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -53,21 +53,21 @@
 .is-center {
   justify-content: center;
 }
-.hl-message-fade-enter,
-.hl-message-fade-leave-to {
-  opacity: 0;
-  transform:translate(-50%,-100%);
-}
-
-.hl-message-fade-enter-active,
-.hl-message-fade-leave-active {
-  transition: opacity 0.5s, transform 0.5s;
-}
-
-// .hl-message-fade-leave-active {
-//   opacity:0;
+// .hl-message-fade-enter,
+// .hl-message-fade-leave-to {
+//   opacity: 0;
 //   transform:translate(-50%,-100%);
 // }
+
+// .hl-message-fade-enter-active,
+// .hl-message-fade-leave-active {
+//   transition: opacity 0.5s, transform 0.5s;
+// }
+.hl-message-fade-enter-active,
+.hl-message-fade-leave-active {
+  opacity:0;
+  transform:translate(-50%,-100%);
+}
 .hl-message__closeBtn {
   position: absolute;
   right: 20px;

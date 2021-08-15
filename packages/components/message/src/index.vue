@@ -1,5 +1,5 @@
 <template>
-  <transition name="hl-message-fade" @after-leave="handleAfterLeave">
+  <transition name="hl-message-fade" @after-leave="handleAfterLeave" appear>
     <div
       class="hl-message"
       :class="classes"
@@ -19,7 +19,7 @@
 
 <script>
 import { getCurrentInstance, computed, ref, watch, onMounted, onUnmounted } from "vue";
-import { useTimer } from "@hooks/useTimer.js";
+import { useTimer } from "../../../hooks/useTimer.js";
 
 const typeMap = {
   success: "success",
@@ -76,7 +76,7 @@ export default {
 
     const { startTimer, clearTimer } = useTimer(() => {
       if(!closed.value && props.duration) {
-        // close();
+        close();
       }
     }, props.duration);
 
@@ -85,7 +85,7 @@ export default {
       visible.value = false;
 
       if(typeof props.onClose === "function") {
-        props.onClose();
+        props.onClose(instance);
       }
     };
 
