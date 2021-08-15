@@ -1,11 +1,15 @@
 import HlButton from "./components/button/src/index.vue";
 import HlCard from "./components/card/src/index.vue";
 import HlIcon from "./components/icon/src/index.vue";
+import HlSwitch from "./components/switch/src/index.vue";
+import HlNotification from "./components/notification/src/index.vue";
 
 const components = [
   HlButton,
   HlCard,
-  HlIcon
+  HlIcon,
+  HlSwitch,
+  HlNotification
 ];
 
 const install = (app) => {

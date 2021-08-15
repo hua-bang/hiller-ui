@@ -26,6 +26,7 @@
 <script>
 import { computed, ref, nextTick, onMounted, watch } from "vue";
 export default {
+  name: "hl-switch",
   emits: ["change", "update:modelValue"],
   props: {
     modelValue: {
