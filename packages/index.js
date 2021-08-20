@@ -3,13 +3,15 @@ import HlCard from "./components/card/src/index.vue";
 import HlIcon from "./components/icon/src/index.vue";
 import HlSwitch from "./components/switch/src/index.vue";
 import HlNotification from "./components/notification/src/index.vue";
+import HlRadio from "./components/radio/src/index.vue";
 
 const components = [
   HlButton,
   HlCard,
   HlIcon,
   HlSwitch,
-  HlNotification
+  HlNotification,
+  HlRadio
 ];
 
 const install = (app) => {
