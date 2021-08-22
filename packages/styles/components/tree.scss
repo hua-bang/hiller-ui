@@ -1,0 +1,28 @@
+.hl-sub-tree{
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+}
+.hl-sub-tree-icon{
+  position: absolute;
+  top: 6.5px;
+  left: 4px;
+  font-size: 2px;
+  transform: scale(0.7);
+  color: #c0c4cc;
+}
+.hl-sub-tree-title{
+  margin-left: 25px;
+  height: 26px;
+  line-height: 26px;
+  &:hover{
+    background: #f5f7fa;
+  }
+}
+.hl-sub-tree-children{
+  position: relative;
+  left: 15px;
+  &.closed{
+    display: none;
+  }
+}

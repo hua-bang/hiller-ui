@@ -5,6 +5,7 @@ import HlSwitch from "./components/switch/src/index.vue";
 import HlNotification from "./components/notification/src/index.vue";
 import HlRadio from "./components/radio/src/index.vue";
 import HlCheckBox from "./components/checkbox/src/index.vue";
+import HlTree from "./components/tree/src/index.vue";
 
 const components = [
   HlButton,
@@ -13,7 +14,8 @@ const components = [
   HlSwitch,
   HlNotification,
   HlRadio,
-  HlCheckBox
+  HlCheckBox,
+  HlTree
 ];
 
 const install = (app) => {
